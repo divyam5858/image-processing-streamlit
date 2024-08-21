@@ -6,7 +6,7 @@ from PIL import Image
 # Function to load and resize the image
 def load_and_resize_image(image, width=1080, height=720):
     img = Image.open(image)
-    img_resized = img.resize((width, height))+
+    img_resized = img.resize((width, height))
     return np.array(img_resized)
 
 # Function to convert image to grayscale
